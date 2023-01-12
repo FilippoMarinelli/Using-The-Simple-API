@@ -6,13 +6,9 @@ import { Container } from '../../styles/GlobalStyles';
 export default function Login() {
   return (
     <Container>
-      <Title isRed={false}>
-        Login
-        <small>Oie</small>
-      </Title>
+      <Title isRed={false}>Login</Title>
       <Paragrafo>Lorem ipsun</Paragrafo>
       <button type="button">Enviar</button>
-      <a href="https://">kappa</a>
     </Container>
   );
 }

@@ -13,6 +13,7 @@ export default createGlobalStyle`
   body{
     font-family: sans-serif;
     background: ${primaryDarkColor};
+    color: ${primaryColor};
   }
 
   html,body, #root{
@@ -25,10 +26,13 @@ export default createGlobalStyle`
     border: none;
     color: #fff;
     padding: 10px;
+    border-radius: 4px;
+    font-weight: 700;
   }
 
   a {
     text-decoration: none;
+    color: ${primaryColor};
   }
 
   ul{
@@ -43,4 +47,5 @@ export const Container = styled.section`
   padding: 30px;
   border-radius: 4px;
   box-shadow: 0 0 10px rgb(0, 0, 0, 0.4);
+  color: black;
 `;
