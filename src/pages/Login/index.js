@@ -3,27 +3,26 @@ import { useDispatch } from 'react-redux';
 
 import { Title, Paragrafo } from './styled';
 import { Container } from '../../styles/GlobalStyles';
+import * as exampleAction from '../../store/modules/example/actions';
 
-import axios from '../../services/axios';
+// import axios from '../../services/axios';
 
 export default function Login() {
   const dispatch = useDispatch();
 
-  React.useEffect(() => {
-    async function getData() {
-      const response = await axios.get('/alunos');
-      console.log(response);
-    }
+  // React.useEffect(() => {
+  //   async function getData() {
+  //     const response = await axios.get('/alunos');
+  //     console.log(response);
+  //   }
 
-    getData();
-  }, []);
+  //   getData();
+  // }, []);
 
   function handleClick(e) {
     e.preventDefault();
 
-    dispatch({
-      type: 'botao_clicado',
-    });
+    dispatch(exampleAction.clicaBotaoRequest());
   }
 
   return (
